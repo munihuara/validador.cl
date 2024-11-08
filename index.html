@@ -132,7 +132,7 @@
   </div>
 
   <script>
-    const validCodes = ["ABC123", "DEF456", "GHI789", "JKL012", "MNO345"];
+    const validCodes = ["1A8F4NC9MX2", "1a8f4nc9mx2", "", "", ""];
 
     function checkCode() {
       const inputCode = document.getElementById("codeInput").value.trim();
@@ -147,10 +147,10 @@
       }
 
       if (validCodes.includes(inputCode)) {
-        resultElement.textContent = "Permiso de Circulación Valido";
+        resultElement.textContent = "PERMISO DE CIRCULACION VALIDO";
         resultElement.className = "valid";
       } else {
-        resultElement.textContent = "Código inválido.";
+        resultElement.textContent = "PERMISO DE CIRCULACION NO EXISTE.";
         resultElement.className = "invalid";
       }
     }
